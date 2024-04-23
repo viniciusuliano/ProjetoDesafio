@@ -68,10 +68,12 @@ body{
 .right form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
 }
 
-input[type="email"], input[type="password"], input[type="submit"]{
+input[type="email"], input[type="password"], input[type="submit"], input[type="text"]{
     width: 450px;
     height: 49px;
     border-radius: 4px;
@@ -105,4 +107,59 @@ input[type="submit"]:hover{
     text-decoration: none;
     color: black;
     font-weight: 400;
+}
+
+.termos{
+    display: flex;
+    align-items: center;
+}
+
+.termos label{
+    margin-left: 10px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+
+@media(max-width:900px){
+    
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .column{
+        width: 100%;
+        height: 100%;
+    }
+
+    .left img{
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    .left h2{
+        text-align: left;
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .left p{
+        font-size: 14px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    input[type="email"], input[type="password"], input[type="submit"], input[type="text"]{
+        width: 90%;
+    }
+
+
+
+
 }

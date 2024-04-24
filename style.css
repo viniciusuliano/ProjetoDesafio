@@ -102,6 +102,17 @@ button{
   font-weight: bold;
 }
 
+.termos{
+  margin: 10px 5px;
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox']{
+  border-radius: 10px;
+  width: 30px;
+  height: 20px;
+}
 
 @media(max-width:800px){
   .container{
